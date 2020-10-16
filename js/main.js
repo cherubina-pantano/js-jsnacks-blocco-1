@@ -1,4 +1,29 @@
 /*
+JSnack 5:
+
+ Crea un array vuoto.
+ Chiedi per 6 volte all’utente di inserire un numero
+ Se è dispari inseriscilo nell’array
+
+*/
+
+var listNumb = [];
+
+for (var i = 0; i < 6; i++) {
+  var userNumb = parseInt( prompt('Inserisci un numero') );
+  console.log(userNumb);
+
+   if (userNumb % 2 !== 0) {
+     listNumb.push(userNumb);
+   }
+
+}
+
+// console.log(listNumb);
+document.getElementById('Snack5-listaDispari').innerHTML = ('Lista dei numeri dispari: ' + listNumb);
+
+// *******************************************************************************************
+/*
 JSnack 4:
 
  In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby (Paolo, Fabio, Lorenzo)
@@ -7,32 +32,31 @@ JSnack 4:
 
  */
 
-var listaInvitati = ['Paolo', 'Fabio', 'Lorenzo'];
-
-var userName = prompt('Inserisci il tuo nome').toLowerCase();
-
-var nameCheck = false;
-
-
-for (var i = 0; i < listaInvitati.length; i++) {
-  var item = listaInvitati[i].toLowerCase();
-  console.log(item);
-
-  if (userName == item) {
-      nameCheck = true;
-  }
-}
-
-if (nameCheck == true) {
-  // console.log('Ciao! Puoi partecipare alla festa del grande Gatsby');
-  document.getElementById('Snack4-nameCheck-t').innerHTML = ('Ciao! Puoi partecipare alla festa del grande Gatsby');
-
-}
-else {
-  // console.log('Mi spiace! Non sei stato invitato alla festa!');
-  document.getElementById('Snack4-nameCheck-f').innerHTML = ('Mi spiace! Non sei stato invitato alla festa!');
-
-}
+// var listaInvitati = ['Paolo', 'Fabio', 'Lorenzo'];
+//
+// var userName = prompt('Inserisci il tuo nome').toLowerCase();
+//
+// var nameCheck = false;
+//
+//
+// for (var i = 0; i < listaInvitati.length; i++) {
+//   var item = listaInvitati[i].toLowerCase();
+//   console.log(item);
+//
+//   if (userName == item) {
+//       nameCheck = true;
+//   }
+// }
+//
+// if (nameCheck == true) {
+//   // console.log('Ciao! Puoi partecipare alla festa del grande Gatsby');
+//   document.getElementById('Snack4-nameCheck-t').innerHTML = ('Ciao! Puoi partecipare alla festa del grande Gatsby');
+//
+// }
+// else {
+//   // console.log('Mi spiace! Non sei stato invitato alla festa!');
+//   document.getElementById('Snack4-nameCheck-f').innerHTML = ('Mi spiace! Non sei stato invitato alla festa!');
+// }
 
 
 // *******************************************************************************************
