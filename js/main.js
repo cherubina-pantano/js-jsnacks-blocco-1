@@ -1,4 +1,42 @@
 /*
+JSnack 4:
+
+ In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby (Paolo, Fabio, Lorenzo)
+ Chiedi all’utente il suo nome
+ Comunicagli se può partecipare o no alla festa.
+
+ */
+
+var listaInvitati = ['Paolo', 'Fabio', 'Lorenzo'];
+
+var userName = prompt('Inserisci il tuo nome').toLowerCase();
+
+var nameCheck = false;
+
+
+for (var i = 0; i < listaInvitati.length; i++) {
+  var item = listaInvitati[i].toLowerCase();
+  console.log(item);
+
+  if (userName == item) {
+      nameCheck = true;
+  }
+}
+
+if (nameCheck == true) {
+  // console.log('Ciao! Puoi partecipare alla festa del grande Gatsby');
+  document.getElementById('Snack4-nameCheck-t').innerHTML = ('Ciao! Puoi partecipare alla festa del grande Gatsby');
+
+}
+else {
+  // console.log('Mi spiace! Non sei stato invitato alla festa!');
+  document.getElementById('Snack4-nameCheck-f').innerHTML = ('Mi spiace! Non sei stato invitato alla festa!');
+
+}
+
+
+// *******************************************************************************************
+/*
 JSnack 3:
 
 Il software deve chiedere per 5 volte all’utente di inserire un numero.
@@ -7,33 +45,21 @@ Esegui questo programma con il for.
 
 */
 
-var somma = 0;
-
-for (var i = 0; i <= 4; i++) {
-  var userNum =  parseInt( prompt('Inserisci un numero') );
-  console.log(userNum);
-
-  // somma = somma + userNum;
-  somma += userNum;
-}
-
-  // console.log(somma);
-  document.getElementById('Snack3-somma').innerHTML = ('La somma dei numeri inseriti è: '+ somma);
-
-
-
-
-
-
-
-
-
-
+// var somma = 0;
+//
+// for (var i = 0; i <= 4; i++) {
+//   var userNum =  parseInt( prompt('Inserisci un numero') );
+//   console.log(userNum);
+//
+//   // somma = somma + userNum;
+//   somma += userNum;
+// }
+//
+//   // console.log(somma);
+//   document.getElementById('Snack3-somma').innerHTML = ('La somma dei numeri inseriti è: '+ somma);
 
 
 // *******************************************************************************************
-
-
 /*
 JSnack 2:
 
