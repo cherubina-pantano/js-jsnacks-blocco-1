@@ -1,4 +1,40 @@
 /*
+JSnack 3:
+
+Il software deve chiedere per 5 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti.
+Esegui questo programma con il for.
+
+*/
+
+var somma = 0;
+
+for (var i = 0; i <= 4; i++) {
+  var userNum =  parseInt( prompt('Inserisci un numero') );
+  console.log(userNum);
+
+  // somma = somma + userNum;
+  somma += userNum;
+}
+
+  // console.log(somma);
+  document.getElementById('Snack3-somma').innerHTML = ('La somma dei numeri inseriti è: '+ somma);
+
+
+
+
+
+
+
+
+
+
+
+
+// *******************************************************************************************
+
+
+/*
 JSnack 2:
 
 L’utente inserisce due parole in successione, con due prompt.
@@ -6,26 +42,26 @@ Il software stampa una stringa contenente prima la parola più corta, uno spazio
 
 */
 
-var word1 = prompt('Inserisci la prima parola');
-console.log(word1);
-
-var word2 = prompt('Inserisci la seconda parola');
-console.log(word2)
-
- if (word1.length < word2.length) {
-   // console.log('La parola più corta è: ' + word1 + ' la parola più lunga è: ' + word2);
-   document.getElementById('Snack2-word1').innerHTML = ('La parola più corta è: ' + word1 + ' la parola più lunga è: ' + word2);
-
- }
-  else if (word1.length > word2.length){
-    // console.log('La parola più corta è: ' + word2 + ' la parola più lunga è: ' + word1);
-    document.getElementById('Snack2-word2').innerHTML = ('La parola più corta è: ' + word2 + ' la parola più lunga è: ' + word1);
-
-  }
-  else {
-    // console.log('Le parole sono uguali');
-    document.getElementById('Snack2-wordsUguali').innerHTML = ('Le parole hanno la stessa lunghezza');
-  }
+// var word1 = prompt('Inserisci la prima parola');
+// console.log(word1);
+//
+// var word2 = prompt('Inserisci la seconda parola');
+// console.log(word2)
+//
+//  if (word1.length < word2.length) {
+//    // console.log('La parola più corta è: ' + word1 + ' la parola più lunga è: ' + word2);
+//    document.getElementById('Snack2-word1').innerHTML = ('La parola più corta è: ' + word1 + ' la parola più lunga è: ' + word2);
+//
+//  }
+//   else if (word1.length > word2.length){
+//     // console.log('La parola più corta è: ' + word2 + ' la parola più lunga è: ' + word1);
+//     document.getElementById('Snack2-word2').innerHTML = ('La parola più corta è: ' + word2 + ' la parola più lunga è: ' + word1);
+//
+//   }
+//   else {
+//     // console.log('Le parole sono uguali');
+//     document.getElementById('Snack2-wordsUguali').innerHTML = ('Le parole hanno la stessa lunghezza');
+//   }
 
 
 // *******************************************************************************************
